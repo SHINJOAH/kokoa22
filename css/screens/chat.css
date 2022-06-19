@@ -46,6 +46,7 @@
 .message-row {
     width: 100%;
     display: flex;
+    margin-bottom: 25px;
 
 }
 
@@ -71,6 +72,7 @@
 .message__bubble {
     background-color: white;
     padding: 6px 13px;
+    font-size: 18px;
     border-radius: 10px;
     border-top-left-radius: 0px;
     margin-right: 5px;
@@ -84,3 +86,18 @@
     
 }
 
+.message-row--own {
+    justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.message-row--own .message__info {
+    flex-direction: row-reverse;
+  }
